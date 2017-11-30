@@ -1,11 +1,18 @@
 // *** this is the minimal that is needed to run a web server with Express
 
 const express = require('express');
+const morgan = require('morgan');
 
 // When we require `express`, we get function that we can call
 // to create an "instance of" `express` app. We will use methods
 // of the app object to build our web server.
 const app = express(); //creates an instance of Express
+
+// it's a high order function that runs middleware that is a function
+app.use(morgan('dev')); // we will use this because the simplest information that it gives
+// app.use(morgan('combined')); // much more information
+
+/*  ///// as we added the line above, this peace of code would be duplicated
 
 // to use next function from middleware, it's necessary to write this line:
 app.use((request, response, next) => {
@@ -16,7 +23,7 @@ app.use((request, response, next) => {
  // to load forever while it waits for a response.
   next();  //if there's no this line, the browser won't finish refreshing
 });
-
+*/
 
 
 // when in the URL call /home, this get will run
