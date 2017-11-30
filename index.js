@@ -7,6 +7,17 @@ const express = require('express');
 // of the app object to build our web server.
 const app = express(); //creates an instance of Express
 
+// to use next function from middleware, it's necessary to write this line:
+app.use((request, response, next) => {
+  console.log(`${request.method} - ${request.path} - ${new Date().toString()}`);
+  // The `next` argument is a function that when called tells express
+ // that the middleware is finished and its time to move to the next
+ // one in line. If you forget to call `next`, your client will appear
+ // to load forever while it waits for a response.
+  next();  //if there's no this line, the browser won't finish refreshing
+});
+
+
 
 // when in the URL call /home, this get will run
 // the names doesn't matter, but order yes
