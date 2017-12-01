@@ -1,0 +1,36 @@
+
+
+>>>>  knex.js  ----> is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, and Oracle designed to be
+flexible, portable, and fun to use. Totally idependent of Express and works but its own.
+http://knexjs.org/
+npm install -g pg knex
+
+*** including this lines inside the package.json, it's possible to run it from npm
+
+dropdb --echo fotorol_dev  (erase completely the database)
+dropdb --echo --if-exists fotorol_dev
+
+
+# package.json
+,
+"db:create": "createdb --echo fotorol_dev",
+"db:drop": "dropdb --echo --if-exists fotorol_dev"
+
+
+* npm command in terminal:
+
+npm run db:create
+
+
+knex init  (begin )
+
+
+*** need to ammend the file knexfile.js
+
+*** create a folder called 'db'and a file index.js
+
+### typing env shows all variables from the system and it needs to be used to check what exists
+
+### node and after process will show everything that is running
+process.env
+process.env.NODE_ENV

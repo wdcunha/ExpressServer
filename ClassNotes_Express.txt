@@ -101,7 +101,7 @@ https://github.com/expressjs/body-parser
 npm install body-parser
 
 
->>>>  knex  ----> is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, and Oracle designed to be
+>>>>  knex.js  ----> is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, and Oracle designed to be
 flexible, portable, and fun to use. Totally idependent of Express and works but its own.
 http://knexjs.org/
 npm install -g pg knex
