@@ -1,0 +1,107 @@
+https://github.com/CodeCoreYVR/fotorol_nov_2017
+
+
+https://codecore.certified.in/codecore-bootcamp-september-2017-cohort-copy/js-express-basics/presentation-102
+* it's good to follow instruction in the presentation above
+
+****if want or need:  npm install -g chalk
+
+
+1) npm init
+2) npm install express
+3) npm install --save-dev nodemon
+4) npm install morgan
+5) npm install ejs
+6) npm install body-parser
+7) insert lines above in package.json:
+,
+"start": "nodemon index.js"
+8) creat index.js and folder views with files
+9) npm run start
+10) npm install -g pg knex  (-g install globally)
+
+
+
+package name: (fotorol) // keep this
+version: (1.0.0) 0.0.1  //any format we want
+description: An Exchange-a-gram clone written in Express //an any name we want
+entry point: (index.js) //it's ok to use this file
+test command:
+git repository:
+keywords:
+author: Wellington Cunha
+license: (ISC)
+//// it will show what is below:
+
+About to write to /home/wellington/CodeCore/fotorol/package.json:
+
+{
+  "name": "fotorol",
+  "version": "0.0.1",
+  "description": "An Exchange-a-gram clone written in Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wellington Cunha",
+  "license": "ISC"
+}
+
+
+Is this ok? (yes) // finish here
+*** a file called package.json is created then, where is all informationa typed above
+
+
+
+////  creates Express - JavaScript library (minimal and flexible Node.js web framework)
+http://expressjs.com/
+http://startupipsum.io/
+>>> npm install express
+it creates a folder named node_modules and inside of this, another one called express and if
+all things are messed up, you can run 'npm install express' again
+
+**** file package-lock.json  package lock
+
+
+after that, it is needed to commit
+*** git add.
+*** git commit -m 'Install express'
+
+curl https://www.gitignore.io/api/node,macos > .gitignore
+
+>> Install Nodemon
+npm install --save-dev nodemon
+
+*** inside package.json it's necessary to insert the follow line:
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon index.js"
+},
+>>>  after to save the file above, it needs to run the command line below to produce the effects expected
+and finally we can run nodemon:
+npm run start  *** will need to run this all the time we want to run the server instead of nodemon index.js
+                   because it was installed locally, not globally
+
+
+>>> Morgan - is a library of middleware to show servers log information from Express
+npm install morgan (not using node as in the material)
+
+
+>>>   EJS ---> templates provide simple sintax to generate text with a programming language, in this case,
+>>> JavaScript
+http://ejs.co/
+npm install ejs  ----> It's easy to install EJS with NPM
+apm install language  ----> this is a package for Atom see ejs action
+
+after those above, creates a file home.ejs
+
+
+>>> body-parser ----> allow middleware to process form data
+https://github.com/expressjs/body-parser
+npm install body-parser
+
+
+>>>>  knex  ----> is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, and Oracle designed to be
+flexible, portable, and fun to use. Totally idependent of Express and works but its own.
+http://knexjs.org/
+npm install -g pg knex
