@@ -1,4 +1,4 @@
-
+https://codecore.certified.in/codecore-bootcamp-september-2017-cohort-copy/js-express-databases/presentation-103
 
 >>>>  knex.js  ----> is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, and Oracle designed to be
 flexible, portable, and fun to use. Totally idependent of Express and works but its own.
@@ -56,9 +56,13 @@ Batch 1 run: 1 migrations
 
 #### when creating a file (examples.js) to insert data in db, it needs to point to the index.js that is the one makes connection
 
-***node db/examples.js (runs the file with data to put in DB)
+*** node db/examples.js (runs the file with data to put in DB)
 
+*** CRUD for posts ----> POST, GET, PUT/PATH, DELETE
+# first, it don't need to do it in the index.js in the root folder, but creates a new subfolder routes and a file named posts.js, what
+requires (involves) Express, but inside the index.js we need to add some commands:
 
+creates: folders inside views: partials and posts
 
 
 
