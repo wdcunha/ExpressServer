@@ -52,8 +52,11 @@ Using environment: development
 Batch 1 run: 1 migrations
 /home/wellington/CodeCore/fotorol/db/migrations/20171201102305_CreatePosts.js
 "
+***knex migrate:rollback
 
+#### when creating a file (examples.js) to insert data in db, it needs to point to the index.js that is the one makes connection
 
+***node db/examples.js (runs the file with data to put in DB)
 
 
 
