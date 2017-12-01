@@ -34,3 +34,34 @@ knex init  (begin )
 ### node and after process will show everything that is running
 process.env
 process.env.NODE_ENV
+
+>>> knex mmigrate:make CreatePosts  ---->
+" result after running the command above
+Using environment: development
+Created Migration: /home/wellington/CodeCore/fotorol/db/migrations/20171201102305_CreatePosts.js
+"
+
+### need to ammend the file created inside the folder above (db): 20171201102305_CreatePosts.js
+*** here is made settings about the table like auto increments
+*** return is something important or the result won't be showed/done
+
+
+***knex migrate:latest
+ "
+Using environment: development
+Batch 1 run: 1 migrations
+/home/wellington/CodeCore/fotorol/db/migrations/20171201102305_CreatePosts.js
+"
+
+
+
+
+
+
+
+
+
+
+
+
+<bump>
